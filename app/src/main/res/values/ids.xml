@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_id">593304742215</string>
+
+    <string name="achievement_getting_warmed_up">CgkIx9LfnaIREAIQAw</string>
+    <string name="achievement_dedicated">CgkIx9LfnaIREAIQBA</string>
+    <string name="achievement_not_your_day">CgkIx9LfnaIREAIQBQ</string>
+    <string name="achievement_the_answer">CgkIx9LfnaIREAIQBg</string>
+    <string name="achievement_on_a_roll">CgkIx9LfnaIREAIQBw</string>
+    <string name="leaderboard_high_scores">CgkIx9LfnaIREAIQCA</string>
+</resources>

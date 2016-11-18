@@ -1,0 +1,75 @@
+
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <com.greenkee.pokeADot.PlayView
+        android:id = "@+id/uiScreen"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".TitleScreen">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:gravity="center">
+        <Button
+            android:id= "@+id/bClassic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity = "center"
+            android:textSize="40sp"
+            android:textColor = "#ff00ffff"
+            android:text = "Classic Mode"
+            android:background="@null"
+            android:shadowColor="#ff000000"
+            android:shadowDx="0.0"
+            android:shadowDy="0.0"
+            android:shadowRadius="8.0"/>
+        <Button
+            android:id= "@+id/bMemory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity = "center"
+            android:textSize="40sp"
+
+            android:textColor = "#ff0000ff"
+            android:text = "Follow the Dot"
+            android:background="@null"
+            android:shadowColor="#ff000000"
+            android:shadowDx="0.0"
+            android:shadowDy="0.0"
+            android:shadowRadius="8.0"/>
+        <Button
+            android:id= "@+id/bTutorial"
+            android:textColor = "#ffff00ff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="40sp"
+            android:text = "Tutorial"
+            android:background="@null"
+            android:shadowColor="#ff000000"
+            android:shadowDx="0.0"
+            android:shadowDy="0.0"
+            android:shadowRadius="8.0"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+
+</FrameLayout>

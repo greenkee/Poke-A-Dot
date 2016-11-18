@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="@string/game_settings_header"
+        android:key="game_settings">
+        <EditTextPreference
+            android:key="start_radius"
+            android:title="Initial Ball Radius"
+            android:defaultValue= "10"
+            android:summary="Radius = Screen Height Divided By:"
+            android:selectAllOnFocus = "true"
+            android:inputType="number"/>
+        <EditTextPreference
+            android:key="percent_shrink"
+            android:title="Percent Ball Shrink"
+            android:defaultValue= "92"
+            android:summary="Percentage of Radius"
+            android:selectAllOnFocus = "true"
+            android:inputType="numberDecimal"/>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title = "@string/audio_settings_header"
+        android:key = "audio_settings">
+        <CheckBoxPreference
+            android:key="sound_enabled"
+            android:summary="@string/sound_enabled_summary"
+            android:title="@string/sound_enabled_title"
+            android:defaultValue = "true"/>
+        <CheckBoxPreference
+            android:key="music_enabled"
+            android:summary="@string/music_enabled_summary"
+            android:title="@string/music_enabled_title"
+            android:defaultValue = "true"/>
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

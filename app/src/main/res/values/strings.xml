@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Poke-a-Dot</string>
+
+    <string name = "settings_title">Settings</string>
+    <string name="pause_title">Pause</string>
+    <string name="reset_title">Reset</string>
+    <string name="game_settings_header">Game Settings</string>
+    <string name="num_players_title">Number of Players</string>
+    <string name="audio_settings_header">Audio Settings</string>
+    <string name="sound_enabled_title">Sound Effects Enabled</string>
+    <string name="sound_enabled_summary">Turns sound effects on or off</string>
+    <string name="mode_ready_text">Game Ready\nTap to Begin</string>
+    <string name="mode_paused_text">Paused \nTap Pause to Resume</string>
+    <string name="score_header">Score:\n</string>
+    <string name="combo_header">Combo:\n</string>
+
+
+    <string name="signed_out_greeting">Hello, anonymous user (not signed in)!</string>
+    <string name="achievements_not_available">Please sign in to view achievements.</string>
+    <string name="leaderboards_not_available">Please sign in to view leaderboards.</string>
+    <string name="your_progress_will_be_uploaded">Your existing achievements and score will be uploaded shortly.</string>
+    <string name="achievement">Achievement</string>
+
+    <string name="gamehelper_sign_in_failed">Failed to sign in. Please check your network connection and try again.</string>
+    <string name="gamehelper_app_misconfigured">The application is incorrectly configured. Check that the package name and signing certificate match the client ID created in Developer Console. Also, if the application is not yet published, check that the account you are trying to sign in with is listed as a tester account. See logs for more information.</string>
+    <string name="gamehelper_license_failed">License check failed.</string>
+    <string name="gamehelper_unknown_error">Unknown error.</string>
+    <string name="music_enabled_title">Music Enabled</string>
+    <string name="music_enabled_summary">Turns Music on or Off</string>
+</resources>

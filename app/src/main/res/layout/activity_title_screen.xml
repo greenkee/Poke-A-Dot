@@ -1,0 +1,123 @@
+
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <com.greenkee.pokeADot.TitleView
+        android:id = "@+id/uiScreen"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".TitleScreen">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:textColor = "#ffffffff"
+            android:text = "Welcome to\nPoke-a-Dot!"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:shadowColor="#ff000000"
+            android:shadowDx="0.0"
+            android:shadowDy="0.0"
+            android:shadowRadius="8.0"/>
+        <Button
+            android:id= "@+id/bPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity = "center"
+            android:textSize="40sp"
+            android:layout_marginTop="20dp"
+            android:textColor = "#ff00ffff"
+            android:text = "Play!"
+            android:background="@null"
+            android:shadowColor="#ff000000"
+            android:shadowDx="0.0"
+            android:shadowDy="0.0"
+            android:shadowRadius="8.0"/>
+        <Button
+            android:id= "@+id/bSettings"
+            android:textColor = "#ffff00ff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="40sp"
+            android:text = "@string/settings_title"
+            android:background="@null"
+            android:shadowColor="#ff000000"
+            android:shadowDx="0.0"
+            android:shadowDy="0.0"
+            android:shadowRadius="8.0"/>
+        <Button
+            android:id= "@+id/bAchievements"
+            android:textColor = "#ff00ff00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="40sp"
+            android:text = "Achievements"
+            android:background="@null"
+            android:shadowColor="#ff000000"
+            android:shadowDx="0.0"
+            android:shadowDy="0.0"
+            android:shadowRadius="8.0"/>
+        <Button
+            android:id= "@+id/bLeaderboards"
+            android:textColor = "#ffffff00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="40sp"
+            android:text = "Leaderboards"
+            android:background="@null"
+            android:shadowColor="#ff000000"
+            android:shadowDx="0.0"
+            android:shadowDy="0.0"
+            android:shadowRadius="8.0"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <!-- sign-in button -->
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/sign_in_button"
+                android:layout_width="wrap_content"
+                android:layout_gravity = "center"
+                android:layout_height="wrap_content" />
+
+            <!-- sign-out button -->
+            <Button
+                android:id="@+id/sign_out_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign Out"
+                android:layout_gravity = "center"
+                android:textSize="25sp"
+                android:visibility="gone"/>
+            </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+
+</FrameLayout>

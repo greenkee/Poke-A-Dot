@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <com.greenkee.pokeADot.GameView
+        android:id = "@+id/gameScreen"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id = "@+id/score_display"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor = "#ffffffff"
+                android:textSize = "30sp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                android:text = "@string/score_header"
+                android:shadowColor="#ff000000"
+                android:shadowDx="0.0"
+                android:shadowDy="0.0"
+                android:shadowRadius="8.0"/>
+            <TextView
+                android:id = "@+id/combo_display"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor = "#ffffffff"
+                android:textSize = "30sp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:text = "@string/combo_header"
+                android:shadowColor="#ff000000"
+                android:shadowDx="0.0"
+                android:shadowDy="0.0"
+                android:shadowRadius="8.0"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id = "@+id/status_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor = "#ffffffff"
+            android:layout_gravity="center"
+            android:text = "TEST HELLO \n How Are You?"
+            android:shadowColor="#ff000000"
+            android:shadowDx="0.0"
+            android:shadowDy="0.0"
+            android:shadowRadius="8.0"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom">
+
+            <Button
+                android:layout_alignParentLeft="true"
+                android:id= "@+id/bMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity = "center"
+                android:textSize="25sp"
+                android:textColor = "#ffffffff"
+                android:text = "Menu"
+                android:background="@null"
+                android:onClick = "goToMenu"
+                android:shadowColor="#ff000000"
+                android:shadowDx="0.0"
+                android:shadowDy="0.0"
+                android:shadowRadius="8.0"/>
+            <Button
+                android:layout_centerHorizontal="true"
+                android:id= "@+id/bPause"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity = "center"
+                android:textSize="25sp"
+                android:textColor = "#ffffffff"
+                android:text = "@string/pause_title"
+                android:background="@null"
+                android:onClick = "pauseGame"
+                android:shadowColor="#ff000000"
+                android:shadowDx="0.0"
+                android:shadowDy="0.0"
+                android:shadowRadius="8.0"/>
+            <Button
+                android:id= "@+id/bReset"
+                android:layout_alignParentRight="true"
+                android:textColor = "#ffffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity = "right"
+                android:textSize="25sp"
+                android:text = "@string/reset_title"
+                android:background="@null"
+                android:onClick = "resetGame"
+                android:shadowColor="#ff000000"
+                android:shadowDx="0.0"
+                android:shadowDy="0.0"
+                android:shadowRadius="8.0"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+    </RelativeLayout>
+
+
+
+</FrameLayout>
